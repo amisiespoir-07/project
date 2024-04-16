@@ -13,10 +13,11 @@ st.sidebar.header('User Input Parameters')
 
 analytic_fields = ['LotArea', 'OverallCond', 'YearBuilt', 'TotalBsmtSF']
 def user_input_features():
-    LotArea = st.sidebar.slider('LotArea', 4.3, 7.9, 5.4)
-    OverallCond = st.sidebar.slider('OverallCond', 2.0, 4.4, 3.4)
-    YearBuilt = st.sidebar.slider('YearBuilt', 1.0, 6.9, 1.3)
-    TotalBsmtSF = st.sidebar.slider('TotalBsmtSF', 0.1, 2.5, 0.2)
+    LotArea = st.sidebar.slider('LotArea', 5000, 20000, 10000)   #('LotArea', 4.3, 7.9, 5.4)
+    OverallCond = st.sidebar.slider('OverallCond', 5, 10, 7)#('OverallCond', 2.0, 4.4, 3.4)
+    YearBuilt = st.sidebar.slider('YearBuilt', 1900, 2022, 1980) #('YearBuilt', 1.0, 6.9, 1.3)
+    TotalBsmtSF = st.sidebar.slider('TotalBsmtSF', 0, 3000, 1000)
+#('TotalBsmtSF', 0.1, 2.5, 0.2)
     data = { 'LotArea' : LotArea,
             'OverallCond' : OverallCond,
             'YearBuilt': YearBuilt,
@@ -24,7 +25,7 @@ def user_input_features():
     }
     featuers = pd.DataFrame(data, index=[0])
     return featuers
-
+  
 df =  user_input_features() 
 
 st.subheader('User Input Parameter')
