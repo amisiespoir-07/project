@@ -38,6 +38,29 @@ Before we dive into the documentation for the house price prediction app, let's 
 
 Now that you have your virtual environment set up and a `requirements.txt` file generated, let's move on to the documentation for the house price prediction app.
 
+Based on the search results, here is how to run the Streamlit project:
+
+## Running the Streamlit Application
+
+To run the Streamlit application, execute the following command in the terminal:
+
+```
+streamlit run house-ml-app.py
+```
+
+Replace `house-ml-app.py` with the name of your Python script if it's different.
+
+The key steps are:
+
+1. Open your terminal or command prompt.
+2. Navigate to the directory where your Streamlit app code is located.
+3. Run the following command:
+   ```
+   streamlit run house-ml-app.py
+   ```
+   This will start the Streamlit server and open your app in your default web browser.
+
+
 ## House Price Prediction API with Streamlit and Random Forest
 
 This project provides a user-friendly web application for predicting house prices using Streamlit and a Random Forest model. The application allows users to input specific features of a house and returns the predicted price based on the given input.
